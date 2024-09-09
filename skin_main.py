@@ -11,9 +11,9 @@ def get_skin_mask(hsv_frame):
 # Classify skin tone based on average hue
 def classify_skin_tone(hue_value):
     if hue_value < 10:
-        return "Very Fair", ["Bright colors", "Dark colors", "Pastels"]
+        return "Very Fair", ["Emerald Green, "Navy Blue", "Red", "Deep Purple", "Chocolate Brown", "Pastels"]
     elif hue_value < 20:
-        return "Fair", ["Light colors", "Medium tones", "Pastels"]
+        return "Fair", ["Beige/Warm Beige", "Peach", "Forest Green", ]
     elif hue_value < 30:
         return "Brown", ["Earth tones", "Warm colors", "Bold colors"]
     else:
