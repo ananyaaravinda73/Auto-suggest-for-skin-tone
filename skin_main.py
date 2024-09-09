@@ -13,11 +13,11 @@ def classify_skin_tone(hue_value):
     if hue_value < 10:
         return "Very Fair", ["Emerald Green", "Navy Blue", "Red", "Deep Purple", "Chocolate Brown", "Pastels"]
     elif hue_value < 20:
-        return "Fair", ["Beige/Warm Beige", "Peach", "Forest Green", ]
+        return "Fair", ["Beige/Warm Beige", "Peach", "Forest Green", "Jewel Tones", "Taupe"]
     elif hue_value < 30:
         return "Brown", ["Olive Green", "Deep Red", "Plum", "Metallic Grey Shades", "Turquoise"]
     else:
-        return "Dark", ["Jewel tones", "Bold colors", "White"]
+        return "Dark", ["Brick Red", "Lemon Yellow", "White", "Jade Green", "Sky Blue", "Dusty pink"]
 
 # Start video capture from camera
 cap = cv2.VideoCapture(0)
